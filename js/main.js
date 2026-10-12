@@ -133,4 +133,9 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- 8. Footer year ---------- */
   document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());
 
+  /* ---------- 9. UdaanSetu App Download CTA ---------- */
+  if (window.UdaanSetuAppDownloadCTA && typeof window.UdaanSetuAppDownloadCTA.init === "function") {
+    window.UdaanSetuAppDownloadCTA.init();
+  }
+
 });
